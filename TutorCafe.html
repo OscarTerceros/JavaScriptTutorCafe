@@ -8,12 +8,23 @@
 	<h3>Tutor Cafe</h3>
 	<p id="saludo"></p>
 	<button onclick="saludo()">Realizar Saludo</button>
+	<p id="suma"></p>
+	<input type="text" value="" id="a">
+	<input type="text" value="" id="b">
+	<button onclick="suma()">Suma</button>
 
 </body>
 <script>
 	
 	function saludo(){
 		document.getElementById("saludo").innerHTML = "Hola Mundo";
+	}
+
+	function suma(){
+		var a = parseFloat(document.getElementById("a").value);
+		var b = parseFloat(document.getElementById("b").value);
+		var suma = a + b;
+		document.getElementById("suma").innerHTML = suma;
 	}
 
 </script>
